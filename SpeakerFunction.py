@@ -18,7 +18,7 @@ def speak(Context="Boşluk", save_file = False, save_file_name = "SpeakerLibPri"
         desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
         now_speak = os.path.join(desktop_path, save_file_names)
         speaker = gTTS(text=Context, lang=language, slow=False)
-        #file = f"{save_file_name}.mp3"
+
         speaker.save(now_speak)
         playsound(now_speak)
 
