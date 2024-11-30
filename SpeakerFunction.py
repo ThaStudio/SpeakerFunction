@@ -2,13 +2,13 @@ from playsound import playsound
 from gtts import gTTS
 import os
 
-def speak(Context="Boşluk", save_file = False, save_file_name = "SpeakerLibPri"):
+def speak(Context="Boşluk", save_file = False, save_file_name = "SpeakerFunction"):
 
     language = "en" #You can easily change the language from here, example: "tr", "en", "fr"
 
     if save_file == False:
         speaker = gTTS(text=Context, lang=language, slow=False)
-        file = "SpeakerLibPri.mp3"
+        file = "SpeakerFunction.mp3"
         speaker.save(file)
         playsound(file)
         os.remove(file)
