@@ -2,7 +2,7 @@ from playsound import playsound
 from gtts import gTTS
 import os
 
-def speak(Context="Boşluk", save_file = False, save_file_name = "SpeakerFunction", slow_bool = False):
+def speak(Context="Space", save_file = False, save_file_name = "SpeakerFunction", slow_bool = False):
 
     language = "en" #You can easily change the language from here, example: "tr", "en", "fr"
 
