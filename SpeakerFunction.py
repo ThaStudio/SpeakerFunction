@@ -22,4 +22,4 @@ def speak(Context="Space", save_file = False, save_file_name = "SpeakerFunction"
         speaker.save(now_speak)
         playsound(now_speak)
 
-speak(Context="Hello World", save_file=False, slow_bool=False)
+speak(Context="Hello World!", save_file=False, slow_bool=False)
